@@ -1,0 +1,3 @@
+import { useState } from "react";
+import "./style.css";
+export default function App(){const [name,setName]=useState(""),[amount,setAmount]=useState(""),[items,setItems]=useState([]);const total=items.reduce((s,x)=>s+x.amount,0);function add(e){e.preventDefault();if(!name.trim()||Number(amount)<=0)return;setItems([...items,{name,amount:Number(amount)}]);setName("");setAmount("");}return <main><h1>Expense Tracker</h1><form onSubmit={add}><input placeholder="Expense" value={name} onChange={e=>setName(e.target.value)}/><input type="number" placeholder="Amount ₹" value={amount} onChange={e=>setAmount(e.target.value)}/><button>Add</button></form><h2>Total: ₹{total.toFixed(2)}</h2><ul>{items.map((x,i)=><li key={i}>{x.name} — ₹{x.amount}</li>)}</ul></main>;}

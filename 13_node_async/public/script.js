@@ -1,0 +1,1 @@
+document.getElementById("run").onclick=async()=>{document.getElementById("result").textContent="Waiting...";const data=await(await fetch("/api/demo")).json();document.getElementById("result").textContent=data.message;};

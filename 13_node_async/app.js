@@ -1,0 +1,1 @@
+const express=require("express");const app=express();app.use(express.static("public"));app.get("/api/demo",(req,res)=>{console.log("Request received");setTimeout(()=>{console.log("Timer callback");res.json({message:"Callback completed after 1 second"});},1000);});app.listen(3000,()=>console.log("Open http://localhost:3000"));

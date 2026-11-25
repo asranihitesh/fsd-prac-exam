@@ -1,0 +1,1 @@
+Run npm create vite@latest . -- --template react in an empty folder OR create a Vite React project, then copy these files. Run npm install and npm run dev.\n

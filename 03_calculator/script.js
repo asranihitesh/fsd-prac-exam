@@ -1,0 +1,1 @@
+document.getElementById("calculate").onclick=function(){const a=Number(document.getElementById("first").value),b=Number(document.getElementById("second").value),op=document.getElementById("operator").value;let r;if(op==="/"&&b===0)r="Cannot divide by zero";else r=op==="+"?a+b:op==="-"?a-b:op==="*"?a*b:a/b;document.getElementById("result").textContent="Result: "+r;};

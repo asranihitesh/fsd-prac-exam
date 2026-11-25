@@ -1,0 +1,3 @@
+import { useState } from "react";
+import "./style.css";
+export default function App(){const [name,setName]=useState(""),[message,setMessage]=useState(""),[list,setList]=useState([]);function submit(e){e.preventDefault();if(!message.trim())return;setList([...list,{name:name||"Anonymous",message}]);setName("");setMessage("");}return <main><h1>Feedback Collection</h1><form onSubmit={submit}><input placeholder="Name (optional)" value={name} onChange={e=>setName(e.target.value)}/><textarea placeholder="Write feedback" value={message} onChange={e=>setMessage(e.target.value)}/><button>Submit</button></form><h2>Feedback</h2>{list.map((x,i)=><p key={i}><b>{x.name}:</b> {x.message}</p>)}</main>;}

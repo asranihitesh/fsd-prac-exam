@@ -1,0 +1,1 @@
+fetch("/api/students").then(r=>r.json()).then(data=>{const ul=document.getElementById("students");data.forEach(s=>{const li=document.createElement("li");li.textContent=s.name+" — "+s.course;ul.appendChild(li);});});

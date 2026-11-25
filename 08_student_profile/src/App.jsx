@@ -1,0 +1,3 @@
+import { useState } from "react";
+import "./style.css";
+export default function App(){const [name,setName]=useState("Student"),[course,setCourse]=useState("BCA");return <main><h1>Student Profile</h1><label>Name <input value={name} onChange={e=>setName(e.target.value)}/></label><label>Course <input value={course} onChange={e=>setCourse(e.target.value)}/></label><section><h2>Profile Details</h2><p>Name: {name}</p><p>Course: {course}</p></section></main>;}

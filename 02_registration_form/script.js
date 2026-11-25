@@ -1,0 +1,1 @@
+document.getElementById("registration").addEventListener("submit",function(e){e.preventDefault();document.getElementById("message").textContent="Registration submitted successfully!";this.reset();});

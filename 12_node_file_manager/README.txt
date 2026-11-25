@@ -1,0 +1,1 @@
+In this folder run: npm init -y && npm install express; then node app.js. Open http://localhost:3000. Files are stored in the local files folder.

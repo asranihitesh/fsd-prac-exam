@@ -1,0 +1,1 @@
+document.getElementById("btn").onclick=()=>document.getElementById("message").textContent="Hello from the Node.js server!";

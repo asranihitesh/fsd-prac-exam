@@ -1,0 +1,1 @@
+Run npm init -y, npm install express, then node app.js. Open http://localhost:3000. Data is stored in memory and resets on restart.
